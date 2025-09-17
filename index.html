@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karthikey - Full-Stack Developer & Data Scientist Portfolio. 4+ years of excellence. Based in Nidadavole. Web Development | AI | Business Intelligence">
+  <title>Karthikey | Developer & Data Scientist</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #1a1a2e;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bfae;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+      background: linear-gradient(135deg, #1b2735, #090a0f);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero .btn {
+      padding: 10px 30px;
+      background: #00bfae;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #00a58d;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 40px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #00bfae;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    /* About Team Section */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      max-width: 600px;
+    }
+
+    .about-image {
+      flex: 1 1 400px;
+      max-width: 600px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .skill, .project {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill:hover, .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill h3, .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #1a1a2e;
+    }
+
+    .skill ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skill ul li {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00bfae;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #00a58d;
+    }
+
+    /* Contact Form Styles */
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    form button {
+      background: #00bfae;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #00a58d;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 10px 20px;
+      }
+
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Karthikey.Dev</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hi, I'm Karthikey</h1>
+    <p>Full-Stack Developer & AI Engineer | 4+ Years in Web & Data</p>
+    <p>Transforming businesses through technology, analytics, and scalable solutions.</p>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </section>
+
+  <!-- About Team Section -->
+  <section id="about" class="about-section">
+    <div class="about-text">
+      <h2>About Our Team</h2>
+      <p>We are a passionate team of developers, data scientists, and innovators working together to build scalable, intelligent, and impactful solutions. With expertise across web technologies, AI, and business intelligence, we thrive on solving complex challenges and helping businesses transform digitally.</p>
+      <p><strong>Team Values:</strong> Collaboration | Innovation | Integrity | Excellence</p>
+    </div>
+    <div class="about-image">
+      <img src="images/Team work.jpg" alt="Our Team Photo">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Web & Backend</h3>
+        <ul>
+          <li>HTML5, CSS3, JS, React, Vue, Tailwind</li>
+          <li>Node.js, Express, Flask, Django</li>
+          <li>MongoDB, PostgreSQL, MySQL</li>
+          <li>REST APIs, GraphQL, GitHub Actions</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3>Data & AI</h3>
+        <ul>
+          <li>Python, R, SQL</li>
+          <li>Pandas, NumPy, Scikit-learn, XGBoost</li>
+          <li>TensorFlow, Keras, LLM APIs</li>
+          <li>Power BI, Tableau, Seaborn</li>
+          <li>AWS, GCP, Docker</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Global E-Commerce Platform</h3>
+        <p>Multi-vendor store with international payment, shipping & analytics. Built with React, Node.js & MongoDB.</p>
+        <a class="btn" href="https://github.com/karthikey/ecommerce-platform">GitHub Link</a>
+        <img src="images/E com.jpg" alt="E-Commerce Screenshot">
+      </div>
+      <div class="project">
+        <h3>Healthcare AI Engine</h3>
+        <p>Predictive diagnostics platform using ML for hospitals. Deployed with Flask, TensorFlow, Docker.</p>
+        <a class="btn" href="https://github.com/karthikey/health-ai-engine">GitHub Link</a>
+        <img src="images/Health care.jpg" alt="Healthcare AI">
+      </div>
+      <div class="project">
+        <h3>Real-Time BI Dashboard</h3>
+        <p>Live financial analytics using Power BI & Python ETL pipeline. Enabled 50% faster decision making for client.</p>
+        <a class="btn" href="https://github.com/karthikey/financial-dashboard">GitHub Link</a>
+        <img src="images/Data analysis.jpg" alt="BI Dashboard">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p><strong>Email:</strong> kgroupsofindia@gmail.com</p>
+    <form action="mailto:myportfolio@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Karthikey. Built for impact, powered by innovation.</p>
+  </footer>
+
+</body>
+</html>
