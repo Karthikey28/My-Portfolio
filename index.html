@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karthikey - Full-Stack Developer & Data Scientist Portfolio. 4+ years of excellence. Based in Nidadavole. Web Development | AI | Business Intelligence">
+  <title>Karthikey | Finance Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+  <ul>
+    <li class="logo">Karthikey</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hi, I'm Karthikey</h1>
+    <p>Finance & Excel Learner | Accounting • GST • Financial Analysis</p>
+    <p>Building practical financial tools using Excel and accounting concepts.</p>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </section>
+
+  <!-- About Team Section -->
+  <section id="about" class="about-section">
+    <div class="about-text">
+      <h2>About Me</h2>
+<p>
+I am a B.Tech student learning finance alongside my degree. I focus on understanding how money flows inside a business and applying concepts through Excel-based projects.
+</p>
+<p>
+I have worked on GST calculations, salary systems, and basic financial analysis. I am currently looking to gain real-world experience in finance.
+</p>
+    </div>
+    <div class="about-image">
+      <img src="teamwork.jpg" alt="Our Team Photo">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Finance</h3>
+<ul>
+  <li>Financial Accounting (Basics)</li>
+  <li>Financial Ratio Analysis</li>
+  <li>GST Concepts</li>
+</ul>
+      </div>
+      <div class="skill">
+       <h3>Tools</h3>
+<ul>
+  <li>MS Excel (VLOOKUP, Pivot Tables)</li>
+  <li>Data Cleaning</li>
+  <li>Tally Prime (Basic)</li>
+</ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+
+  <div class="project" onclick="openModal('gst')">
+    <img src="Gst Calculator.png">
+    <h3>GST Calculation Sheet</h3>
+    <p>Excel-based GST calculation system</p>
+    <div class="center-btn">
+      <button class="btn">View Project</button>
+    </div>
+  </div>
+
+  <div class="project" onclick="openModal('salary')">
+    <img src="Salary Calculator.png">
+    <h3>Salary Calculator</h3>
+    <p>Salary breakdown with deductions</p>
+    <div class="center-btn">
+      <button class="btn">View Project</button>
+    </div>
+  </div>
+
+  <div class="project" onclick="openModal('attendance')">
+    <img src="Attendance.png">
+    <h3>Attendance System</h3>
+    <p>Automated tracking system</p>
+    <div class="center-btn">
+      <button class="btn">View Project</button>
+    </div>
+  </div>
+
+</div>
+  </section>
+
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+    <a id="modal-link" target="_blank" class="btn">Open Project</a>
+  </div>
+</div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p><strong>Email:</strong> karthikey.kantamsetti28@gmail.com</p>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Karthikey. Built for impact, powered by innovation.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
